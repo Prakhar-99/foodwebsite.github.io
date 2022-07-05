@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL&family=Hind:wght@300&display=swap");
+
+@media screen and (max-width: 420px) {
+  .headbg {
+    margin: 0;
+  }
+}
+.headbg {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/backgrounds/About_background.jpg);
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-repeat: no-repeat;
+}
+.head_info {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.head_info h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Charis SIL", serif;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.head_info p {
+  font-size: 18px;
+  margin: 25px 0;
+  text-align: center;
+}
+.head_info a {
+  margin-top: 40px;
+  text-decoration: none;
+}
+.primary_heading {
+  text-align: center;
+  padding-top: 60px;
+  font-family: "Hind", sans-serif;
+  font-size: 50px;
+}
+.menu_container {
+  height: fit-content;
+  padding-bottom: 40px;
+  height: fit-content;
+}
+.dish_head {
+  text-align: center;
+  padding-top: 40px;
+}
+.dishcard {
+  width: fit-content;
+  border: 2px solid black;
+  margin: 20px 0;
+}
+.foodimg {
+  width: 400px;
+  height: 350px;
+}
+.secondary_heading {
+  font-size: 20px;
+  font-family: "Hind", sans-serif;
+}
+.foodinfo a {
+  text-decoration: none;
+  font-family: "Hind", sans-serif;
+  font-size: 20px;
+  color: black;
+  border: 1px solid black;
+  padding: 4px 15px;
+}
+.rate {
+  font-size: 30px;
+  align-self: center;
+}
+.foodinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.subfood {
+  width: 50%;
+  align-self: center;
+}
+.subfood p {
+  margin: 20px 0;
+}
+.dishflex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  height: fit-content;
+  margin: 5em 0;
+}
+/* FAMOUS DISHES MEDIAQURIES SECTION */
+
+@media screen and (max-width: 420px) {
+  .dishflex {
+    height: fit-content;
+  }
+  .dishcard {
+    width: 80vw;
+    margin: 20px 0;
+  }
+  .foodimg {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 850px) {
+  .famousdishes {
+    padding-bottom: 50px;
+  }
+  .dishcard {
+    margin: 10px 30px;
+  }
+}
+
+/* FAMOUSH DISHES MEDIAQURIES END */

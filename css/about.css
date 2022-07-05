@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL&family=Hind:wght@300&display=swap");
+
+.headbg {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/backgrounds/About_background.jpg);
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-repeat: no-repeat;
+}
+.head_info {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.head_info h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Charis SIL", serif;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.head_info p {
+  font-size: 18px;
+  margin: 25px 0;
+  text-align: center;
+}
+.head_info a {
+  margin-top: 40px;
+  text-decoration: none;
+}
+/* FOR BUTTONS */
+.buttn {
+  text-decoration: none;
+  border: 1px solid black;
+  width: 6em;
+  padding: 10px 20px;
+  text-align: center;
+  color: black;
+  font-size: large;
+  margin-top: 25px;
+}
+/* ----------------------- */
+.headbtn {
+  border-color: white;
+  color: white;
+}
+
+/* primary_heading AND primary_paragraph */
+
+.primary_heading {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Hind", sans-serif;
+}
+.primary_paragraph {
+  font-size: 19px;
+  font-family: "Charis SIL", serif;
+  white-space: 40px;
+  text-align: justify;
+}
+/* ---------------------------------- */
+#secdivider {
+  height: 3px;
+  background-color: black;
+}
+.ourstory,
+.OUR_MOTIVATION {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  background-color: rgb(223, 216, 216);
+  margin: 40px 0;
+}
+.ourstory img {
+  height: 550px;
+  margin-left: 5vw;
+}
+.story {
+  width: 50%;
+  padding: 40px;
+}
+.story p {
+  width: 90%;
+}
+.OUR_MOTIVATION img {
+  height: 550px;
+  margin-right: 5vw;
+}
+.motivation {
+  width: 50%;
+  padding: 30px;
+}
+.motivation h1 {
+  text-align: right;
+  padding-right: 36px;
+}
+.motivation p {
+  width: 90%;
+  margin-left: 2vw;
+}
+.fact {
+  background-color: black;
+  color: white;
+}
+.fact h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Hind", sans-serif;
+  font-size: 30px;
+}
+.fact_list {
+  text-align: center;
+  padding: 20px 0;
+}
+.fact_list li {
+  padding: 10px 0;
+}
+
+.lastbg {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/backgrounds/home_background.jpg);
+  height: 70vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+/* MEDIAQURIES */
+
+@media screen and (max-width: 420px) {
+  .head_info h1 {
+    font-size: 33px;
+  }
+
+  .OUR_MOTIVATION img,
+  .ourstory img {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .story p,
+  .motivation p {
+    width: 100%;
+    padding: 0;
+    font-size: 17px;
+    margin: 0;
+  }
+  .story h1,
+  .motivation h1 {
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+  }
+  .motivation,
+  .story {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 840px) and (min-width: 421px) {
+  .ourstory,
+  .OUR_MOTIVATION {
+    display: block;
+    height: fit-content;
+    margin: auto;
+  }
+  .OUR_MOTIVATION img,
+  .ourstory img {
+    display: none;
+  }
+  .story {
+    width: 70%;
+    margin: auto;
+  }
+  .motivation {
+    width: 70%;
+  }
+  .motivation h1 {
+    text-align: left;
+    padding: 0 0 0 70px;
+  }
+  .motivation p {
+    padding-left: 3em;
+  }
+}

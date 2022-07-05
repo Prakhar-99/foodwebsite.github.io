@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL&family=Hind:wght@300&display=swap");
+@media screen and (max-width: 420px) {
+  .headbg {
+    margin: 0;
+  }
+}
+/* FORM SECTION */
+
+.form_sec {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 3em 0;
+  padding: 4em 0;
+}
+
+.form_contain {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_contain img {
+  width: 50%;
+  height: 100%;
+  transform: rotatey(180deg);
+}
+.form_parent {
+  width: 50%;
+  height: 100%;
+}
+.contact {
+  margin: 10px 0;
+  padding: 10px 10px;
+  width: 50%;
+  height: 25px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 3px;
+}
+#feed {
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+.submit {
+  padding: 5px 15px;
+  margin-top: 20px;
+  width: 15%;
+  height: 40px;
+  background-color: rgb(168, 116, 169);
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* MEDIA QURIES OF FORM SECTIONS */
+
+@media screen and (max-width: 840px) and (min-width: 421px) {
+  .form_contain {
+    font-size: 15px;
+  }
+  .form_contain img {
+    display: none;
+  }
+  .form_parent {
+    margin: 0 0 0 40px;
+  }
+  .contact {
+    width: 80%;
+  }
+  .submit {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form_sec {
+    font-size: 12px;
+    display: block;
+  }
+  .form_contain img {
+    display: none;
+  }
+  .contact {
+    width: 100%;
+  }
+  .submit {
+    width: 60%;
+  }
+  .primary_heading {
+    text-align: center;
+  }
+}
+/* MEDIA QURIES OF FORM SECTIONS END */
+
+.primary_heading {
+  margin: 0 0 20px 0;
+  font-size: 3em;
+}
+
+
